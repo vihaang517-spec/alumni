@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Class Institute | Alumni Network</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#4d2a88",
+                    "primary-container": "#9ec2ff",
+                    "tertiary-dim": "#623f9d",
+                    "on-primary-fixed": "#002752",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#004587",
+                    "error-container": "#f56965",
+                    "on-tertiary": "#fef7ff",
+                    "inverse-primary": "#6da7fe",
+                    "secondary-fixed": "#e8f2fd",
+                    "on-primary-container": "#003c77",
+                    "on-surface": "#2f3334",
+                    "on-error-container": "#65000b",
+                    "tertiary": "#6e4caa",
+                    "on-secondary-fixed-variant": "#5c666f",
+                    "primary-fixed": "#9ec2ff",
+                    "surface-container-high": "#e6e9e9",
+                    "outline": "#777b7c",
+                    "tertiary-container": "#c9aaff",
+                    "on-primary": "#f8f8ff",
+                    "on-surface-variant": "#5c6060",
+                    "surface-container": "#eceeee",
+                    "tertiary-fixed-dim": "#bd99fe",
+                    "surface-variant": "#e0e3e4",
+                    "on-secondary-fixed": "#3f4952",
+                    "surface-bright": "#f9f9f9",
+                    "inverse-surface": "#0c0f0f",
+                    "on-tertiary-fixed": "#2d0064",
+                    "error-dim": "#70030f",
+                    "surface-container-low": "#f3f4f4",
+                    "surface-container-highest": "#e0e3e4",
+                    "surface-tint": "#125fb1",
+                    "on-tertiary-container": "#441f7f",
+                    "tertiary-fixed": "#c9aaff",
+                    "secondary-container": "#e8f2fd",
+                    "primary": "#125fb1",
+                    "primary-fixed-dim": "#86b5ff",
+                    "outline-variant": "#afb3b3",
+                    "on-error": "#fff7f6",
+                    "on-secondary": "#f5f9ff",
+                    "background": "#f9f9f9",
+                    "on-background": "#2f3334",
+                    "surface": "#f9f9f9",
+                    "primary-dim": "#0053a0",
+                    "inverse-on-surface": "#9c9d9d",
+                    "error": "#ac3434",
+                    "secondary-fixed-dim": "#dae4ee",
+                    "secondary": "#566069",
+                    "secondary-dim": "#4a545d",
+                    "surface-dim": "#d7dbdb",
+                    "on-secondary-container": "#515b64"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .inner-glow {
+            box-shadow: inset 1px 1px 0px 0px rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-8 h-20 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl shadow-[0px_20px_40px_rgba(31,31,31,0.06)]">
+<div class="flex items-center gap-12">
+<span class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#125fb1] to-[#6e4caa] font-headline">Stitch Class Institute</span>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-blue-600 font-bold border-b-2 border-blue-600 transition-all duration-300" href="#">Home</a>
+<a class="text-slate-500 hover:text-blue-500 transition-all duration-300" href="#">Directory</a>
+<a class="text-slate-500 hover:text-blue-500 transition-all duration-300" href="#">Events</a>
+<a class="text-slate-500 hover:text-blue-500 transition-all duration-300" href="#">Jobs</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-on-surface-variant hover:scale-105 transition-all duration-300 active:scale-95">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:scale-105 transition-all duration-300 active:scale-95">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center justify-center px-6 overflow-hidden">
+<!-- Background Abstract Shapes -->
+<div class="absolute inset-0 z-0">
+<div class="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-tertiary/20 rounded-full blur-[150px]"></div>
+<img class="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 h-full object-contain opacity-80 mix-blend-multiply pointer-events-none" data-alt="abstract 3D glass shapes and fluid crystalline forms with blue and purple light refraction and soft gradients" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5eZnMcvKbq1okfjW0CLaTYGxhFCg8hh7-DiOflnsYj7hvGhNb5qvyFSFWnwWKZj45YBAZisHAC0hIfyl3d6YFc2KXD8LP1cP7RilBtvwzdGF-Yhq4SDwKGUZnVjD2jRS4-r1BMomDXrl0VawPNnwW0BxUR_oeVtrfIOjmsUlo0zaLNW0iJ6aBtmbxXRw2oWoMJ208k8ZG-1-ISJyEBfy9BB-qBoA5pnr87jS2wCUnA5pBPN2cnwlQ06LMoYuHuLGywsA6qQHcjdmp"/>
+</div>
+<!-- Hero Glass Panel -->
+<div class="relative z-10 max-w-5xl w-full">
+<div class="glass-panel p-12 md:p-20 rounded-xl inner-glow border border-white/40 shadow-2xl">
+<div class="max-w-2xl">
+<span class="label-md text-primary font-semibold tracking-widest uppercase mb-6 block">Welcome to the future of Alumni</span>
+<h1 class="font-headline text-5xl md:text-7xl font-bold text-on-surface leading-[1.1] mb-8 tracking-tight">
+                            Elevating the <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-tertiary">Stitch Class</span> Legacy.
+                        </h1>
+<p class="text-lg md:text-xl text-on-surface-variant mb-12 leading-relaxed">
+                            A curated editorial space for the visionaries of tomorrow. Connect, collaborate, and transcend traditional networking with the Luminous Archive.
+                        </p>
+<div class="flex flex-wrap gap-6">
+<button class="px-10 py-4 bg-gradient-to-r from-primary to-tertiary text-white font-semibold rounded-full hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/25 active:scale-95">
+                                Join Now
+                            </button>
+<button class="px-10 py-4 glass-panel text-primary font-semibold rounded-full hover:scale-105 transition-all duration-300 border border-primary/20 active:scale-95">
+                                Explore Network
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats/Bento Grid Section -->
+<section class="py-24 px-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Bento Card 1 -->
+<div class="md:col-span-2 glass-panel p-10 rounded-lg inner-glow border border-white/20 hover:scale-[1.01] transition-transform duration-500">
+<h2 class="font-headline text-3xl font-semibold mb-6">Alumni Insights</h2>
+<div class="grid grid-cols-3 gap-8">
+<div>
+<p class="font-headline text-4xl font-bold text-primary">12k+</p>
+<p class="text-sm text-slate-500 uppercase tracking-widest font-semibold mt-2">Active Members</p>
+</div>
+<div>
+<p class="font-headline text-4xl font-bold text-tertiary">85%</p>
+<p class="text-sm text-slate-500 uppercase tracking-widest font-semibold mt-2">Engagement Rate</p>
+</div>
+<div>
+<p class="font-headline text-4xl font-bold text-primary-dim">450+</p>
+<p class="text-sm text-slate-500 uppercase tracking-widest font-semibold mt-2">Global Events</p>
+</div>
+</div>
+</div>
+<!-- Bento Card 2 -->
+<div class="bg-gradient-to-br from-primary to-tertiary p-10 rounded-lg text-white flex flex-col justify-between">
+<span class="material-symbols-outlined text-4xl" data-icon="auto_awesome">auto_awesome</span>
+<div>
+<h3 class="font-headline text-2xl font-bold mb-2">Featured Alumni</h3>
+<p class="opacity-80">Read the inspiring journey of our latest innovators in the digital space.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section (Scroll Reveal Simulation) -->
+<section class="py-32 bg-surface-container-low px-8">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-20">
+<div class="w-full md:w-1/2 relative">
+<div class="aspect-square rounded-lg overflow-hidden glass-panel p-4 shadow-xl">
+<img class="w-full h-full object-cover rounded-lg" data-alt="minimalist modern office interior with large glass windows showing a city skyline at dusk with soft cool lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdD5wKbe2eO6ALHSN3fpfmjfhLYh1e_e2Q0XZ_w6DXJ5QeazsxZkxyxLjK7z6cCrrlsEeLcJOi2F85LzaJ4Pm76ohEyb6nukKJRVj_77r6oqkM5uLvXXOODeNXEN_TD3zNPRzozEphS0FEjyfTNW1so-VdttXO16TaJGYah30qBiWKpe4H2qxdzGrHUtB02eMEzF0u9_RAD7LlQdzFFv8o1Ahgzn5aiB00xenYHolWjzhsM9hP9Hjw9J_j1R26wa3SC-7GpWuwBgoq"/>
+</div>
+<!-- Floating decorative card -->
+<div class="absolute -bottom-10 -right-10 glass-panel p-8 rounded-lg shadow-2xl border border-white/50 hidden lg:block">
+<p class="font-headline text-xl font-bold text-primary">Established 1994</p>
+<p class="text-sm text-on-surface-variant">Three decades of excellence.</p>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<h2 class="font-headline text-4xl md:text-5xl font-bold mb-8 leading-tight">Beyond a Database. <br/><span class="text-primary">An Archive of Souls.</span></h2>
+<p class="text-lg text-on-surface-variant mb-8 leading-relaxed">
+                        The Luminous Archive is not just a tool for tracking alumni—it is a digital ecosystem designed to capture the essence of our graduates' professional and personal evolution. We believe that every career is a thread in the institute's fabric.
+                    </p>
+<ul class="space-y-4">
+<li class="flex items-center gap-4 text-on-surface font-medium">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+                            Curated Networking Opportunities
+                        </li>
+<li class="flex items-center gap-4 text-on-surface font-medium">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+                            Exclusive Access to Institutional Research
+                        </li>
+<li class="flex items-center gap-4 text-on-surface font-medium">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+                            Lifelong Learning Portal
+                        </li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Features - Hover Scale Glass Cards -->
+<section class="py-32 px-8 max-w-7xl mx-auto text-center">
+<h2 class="font-headline text-4xl font-bold mb-20">Digital Ecosystem</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+<!-- Card 1 -->
+<div class="glass-panel p-12 rounded-xl border border-white/30 inner-glow hover:scale-105 transition-all duration-500 cursor-pointer group text-left">
+<div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary transition-colors duration-500">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:text-white" data-icon="hub">hub</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Directory</h3>
+<p class="text-on-surface-variant leading-relaxed">Search through thousands of profiles with intelligent filters and semantic mapping.</p>
+</div>
+<!-- Card 2 -->
+<div class="glass-panel p-12 rounded-xl border border-white/30 inner-glow hover:scale-105 transition-all duration-500 cursor-pointer group text-left">
+<div class="w-16 h-16 bg-tertiary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-tertiary transition-colors duration-500">
+<span class="material-symbols-outlined text-tertiary text-3xl group-hover:text-white" data-icon="calendar_month">calendar_month</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Events</h3>
+<p class="text-on-surface-variant leading-relaxed">From global summits to local mixers, stay connected with the heartbeat of the network.</p>
+</div>
+<!-- Card 3 -->
+<div class="glass-panel p-12 rounded-xl border border-white/30 inner-glow hover:scale-105 transition-all duration-500 cursor-pointer group text-left">
+<div class="w-16 h-16 bg-secondary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-secondary transition-colors duration-500">
+<span class="material-symbols-outlined text-secondary text-3xl group-hover:text-white" data-icon="rocket_launch">rocket_launch</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Jobs</h3>
+<p class="text-on-surface-variant leading-relaxed">Exclusive opportunities from partner institutes and alumni-led enterprises worldwide.</p>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-32 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="font-headline text-4xl font-bold mb-16 text-center">Voices from the Archive</h2>
+<div class="flex flex-col md:flex-row gap-8">
+<!-- Testimonial 1 -->
+<div class="w-full md:w-1/2 glass-panel p-12 rounded-lg border border-white/40 shadow-lg">
+<div class="flex items-center gap-4 mb-8">
+<img class="w-16 h-16 rounded-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="professional portrait of a confident woman in a neutral blazer with soft studio lighting and clean background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp0O1zS6LtcWXaXDyIFzJinaB25S4eeLBIdzfdreIV6vaE0OE6sfBW3Ry0YifgtQnLFFKzZYKBsp54jVQXeUbaiKvV7QOwCBUMAvwzU9rt6DMvloQDeo4ln8CyYy5xFIIE5aCdewhaBHC-6S4L7EtPU-gyvdSDdKopCMO518ibzFfoFQrto7rzbIRcPl9R9JxMdwDd1XcMvX_T5VYlkS9fVGLcYCR5AEs2De12Ixf8bGDZIeyHm-qKlPX81OweeScBThs7_7-Gd_em"/>
+<div>
+<h4 class="font-headline text-xl font-bold">Sarah Jenkins</h4>
+<p class="text-sm text-primary font-medium">Class of 2012, Lead Architect</p>
+</div>
+</div>
+<p class="text-on-surface-variant italic leading-relaxed text-lg">
+                            "The Stitch Class Institute provided more than an education; it gave me a community that has followed me across three continents. The Luminous Archive is the perfect reflection of that prestige."
+                        </p>
+</div>
+<!-- Testimonial 2 -->
+<div class="w-full md:w-1/2 glass-panel p-12 rounded-lg border border-white/40 shadow-lg translate-y-0 md:translate-y-12">
+<div class="flex items-center gap-4 mb-8">
+<img class="w-16 h-16 rounded-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="portrait of a creative man with glasses in a vibrant studio setting with warm directional light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY7Ku86mvVWDMOvGdHZ1Rriny3MWEhPb2mY85wzB53tkjr7Bd3JnBBi6ddEmIqQYsj3jol7hrN6fwdb6QgOApIU8w7EkHKM40ZL3YTeIXySNwYw2oYo2-Oddiu3urSeZMkg5_qTuk2XG9ZpV9qvi54hGZKmDBCK3MTa4gv1s21hLo1TbTsOCpXDtjYtTvaMq6E_sTC--o13pPJntsQQykGzUbZ-0ZoQe5IQ0pIEGZX-qJIrXyegJhcRTcYSWkbSlonA-EV1IxQhdBS"/>
+<div>
+<h4 class="font-headline text-xl font-bold">David Chen</h4>
+<p class="text-sm text-tertiary font-medium">Class of 2018, Product Innovator</p>
+</div>
+</div>
+<p class="text-on-surface-variant italic leading-relaxed text-lg">
+                            "Transitioning from student to alumni felt seamless thanks to this portal. It's rare to find a management tool that feels as high-end as the institution itself."
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-8">
+<div class="max-w-5xl mx-auto glass-panel p-16 md:p-24 rounded-xl border border-white/40 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+<h2 class="font-headline text-4xl md:text-6xl font-bold mb-8">Ready to stitch your story?</h2>
+<p class="text-xl text-on-surface-variant mb-12 max-w-2xl mx-auto">
+                    Join the thousands of alumni who are redefining their industries through the power of collective innovation.
+                </p>
+<button class="px-16 py-5 bg-gradient-to-r from-primary to-tertiary text-white font-bold text-lg rounded-full hover:scale-105 transition-all duration-300 shadow-2xl shadow-primary/40 active:scale-95">
+                    Create Your Profile
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest py-20 px-8">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<span class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-tertiary font-headline mb-6 block">Stitch Class Institute</span>
+<p class="text-on-surface-variant max-w-sm">Crafting futures and honoring pasts through a luminous digital legacy. The world's premier network for innovation and architecture.</p>
+</div>
+<div>
+<h4 class="font-bold mb-6">Explore</h4>
+<ul class="space-y-4 text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Directory</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Career Center</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Events Calendar</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Giving Back</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Connect</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full glass-panel flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined" data-icon="share">share</span></a>
+<a class="w-10 h-10 rounded-full glass-panel flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined" data-icon="alternate_email">alternate_email</span></a>
+<a class="w-10 h-10 rounded-full glass-panel flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined" data-icon="link">link</span></a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-on-surface/5 flex flex-col md:row justify-between items-center text-sm text-on-surface-variant">
+<p>© 2024 Stitch Class Institute. All rights reserved.</p>
+<div class="flex gap-8 mt-4 md:mt-0">
+<a class="hover:text-on-surface" href="#">Privacy Policy</a>
+<a class="hover:text-on-surface" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 w-full z-50 flex justify-around items-center px-4 py-3 md:hidden bg-white/80 dark:bg-slate-900/80 backdrop-blur-lg rounded-t-[2rem] shadow-[0_-10px_30px_rgba(0,0,0,0.03)]">
+<a class="flex flex-col items-center justify-center text-blue-600 bg-blue-50/50 dark:bg-blue-900/30 rounded-2xl p-2 active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-[0.75rem] font-semibold font-label">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 hover:text-blue-500 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
+<span class="text-[0.75rem] font-semibold font-label">Chat</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 hover:text-blue-500 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="work">work</span>
+<span class="text-[0.75rem] font-semibold font-label">Jobs</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 hover:text-blue-500 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="text-[0.75rem] font-semibold font-label">Profile</span>
+</a>
+</nav>
+</body></html>
